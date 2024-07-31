@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Alura Challenge - Desafio 1 - Encriptador</title>
+</head>
+
+<body>
+
+    <main class="main">
+
+        <section class="textoSection">
+            <header class="textoSection__header">
+                <img src="img/Logo.svg" alt="alura logo">
+            </header>
+
+            <div class="textoSection__inputDiv ">
+                <!-- comentario -->
+                <textarea class="textoSection__input txt1" id="mensaje" rows="9" cols="100%"
+                    placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+
+            <div class="textoSection__div">
+                
+                <div class="textoSection__div--txtInfo txtInfo">
+
+                    <img class="txtInfo__img" src="img/bi_exclamation-circle-fill.png" alt="warning icono">
+                    <span class="txtInfo__span">
+                        Solo letras minúsculas y sin
+                        acentos
+                    </span>
+                </div>
+
+                <div class="textoSection__div--buttons buttons">
+                    <button class="buttons__textoSection button1" type="button" id="encriptar" onclick="encriptadorTexto()">Encriptar</button>
+                    <button class="buttons__textoSection button2" type="button" id="desencriptar" onclick="desencriptadorTexto()">Desencriptar</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="resolved"> 
+            <p class="resolved__txt" id="mensaje-resuelto"></p>
+
+            <div class="resolved__div" id="resolved-div">
+                <div class="resolved__container">
+                    <img class="resolved__container--img" src="img/Muneco.png" alt="no mensaje logo">
+                </div>
+                <p class="resolved__notTxt">Ningún mensaje fue encontrado</p>
+                <p class="resolved__txtInfo">Ingrese el tento que desees encriptar o desencriptar.</p>
+            </div>
+            <button class="resolved__button" type="button" id="copiar" onclick="copiarTexto()">Copiar</button>
+        </section>
+
+    </main>
+    
+    <footer>
+        <p>Elaborado por Francisco Cela &copy; 2024</p>
+    </footer>
+
+    <script src="./js/index.js"></script>
+    
+</body>
+
+</html>
